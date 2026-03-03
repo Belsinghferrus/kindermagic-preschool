@@ -1,0 +1,50 @@
+.title span {
+    font-family: 'Baloo 2', cursive;
+    display: inline-block;
+    -webkit-text-stroke: 6px white;
+    paint-order: stroke fill;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .title span.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+  }
+
+  .title span {
+    display: inline-block;
+    -webkit-text-stroke: 6px white;
+    paint-order: stroke fill;
+    animation: letterAnim 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes letterAnim {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-15px);
+      opacity: 0.85;
+    }
+  }
+
+  .segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+    transform-origin: left bottom;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }

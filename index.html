@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinder Magic Preschool – Best Early Learning School for Kids</title>
-    <meta name="description" content="Kinder Magic Preschool offers the best early childhood education for kids aged 18 months to 6.5 years. Admissions open now." />
-    
+    <meta name="description"
+        content="Kinder Magic Preschool offers the best early childhood education for kids aged 18 months to 6.5 years. Admissions open now." />
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
 
- 
+
     <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-
+    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
@@ -22,91 +25,241 @@
 
 <body>
 
-      <!-- NAVBAR -->
-  <nav class="bg-transparent fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
+    <!-- NAVBAR -->
+    <nav class="bg-transparent fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
 
-        <!-- Logo -->
-        <div class="text-2xl font-bold text-pink-600">
-          
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-pink-600 w-48 mt-24">
+                    <!-- <img src="./assets/images/kindermagic-logo.png" alt="kinder magic "> -->
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">About</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">Programs</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">Gallery</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
+                    <!-- <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">Admission Open</a> -->
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+
+            </div>
         </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8 font-medium">
-          <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
-          <a href="#" class="text-gray-700 hover:text-pink-600">About</a>
-          <a href="#" class="text-gray-700 hover:text-pink-600">Programs</a>
-          <a href="#" class="text-gray-700 hover:text-pink-600">Gallery</a>
-          <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
-          <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">Admission Open</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+            <a href="#" class="block py-2 text-gray-700">Home</a>
+            <a href="#" class="block py-2 text-gray-700">About</a>
+            <a href="#" class="block py-2 text-gray-700">Programs</a>
+            <a href="#" class="block py-2 text-gray-700">Gallery</a>
+            <a href="#" class="block py-2 text-gray-700">Contact</a>
+            <!-- <a href="#" class="block mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg text-center">Admission Open</a> -->
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="h-screen bg-cover bg-center flex items-center justify-center text-center relative"
+        style="background-image: url('./assets/images/sk-bg.jpg'); ">
+
+        <!-- Responsive Logo -->
+        <div class="absolute top-4 left-4 sm:top-6 sm:left-8 md:left-24">
+            <img src="./assets/images/kindermagic-logo.png" alt="Kinder Magic Preschool Logo"
+                class="w-32 sm:w-48 md:w-44 lg:w-48 h-auto">
         </div>
 
-        <!-- Mobile Button -->
-        <div class="md:hidden">
-          <button id="menu-btn" class="text-gray-700 focus:outline-none">
-            ☰
-          </button>
+        <!-- Center Title -->
+        <div class="text-center mb-10 px-4">
+            <h1 id="line1" class="title text-4xl sm:text-7xl md:text-7xl lg:text-8xl font-extrabold"></h1>
+            <h1 id="line2" class="title text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mt-2"></h1>
         </div>
 
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
-      <a href="#" class="block py-2 text-gray-700">Home</a>
-      <a href="#" class="block py-2 text-gray-700">About</a>
-      <a href="#" class="block py-2 text-gray-700">Programs</a>
-      <a href="#" class="block py-2 text-gray-700">Gallery</a>
-      <a href="#" class="block py-2 text-gray-700">Contact</a>
-      <!-- <a href="#" class="block mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg text-center">Admission Open</a> -->
-    </div>
-  </nav>
+    </section>
 
 
-   <!-- HERO SECTION -->
-   <section 
-   class="h-screen bg-cover bg-center flex items-center justify-center text-center relative"
-   style="background-image: url('./assets/images/Sk1.jpg');"
- >
-   <!-- Overlay -->
-   <!-- <div class="absolute inset-0 bg-black bg-opacity-50"></div> -->
 
 
-    <div class="text-center mb-10">
-        <h1 id="line1" class="title text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold"></h1>
-        <h1 id="line2" class="title text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mt-2"></h1>
-      </div>
-  
-      <style>
-        .title span {
-          font-family: 'Baloo 2', cursive;
-          display: inline-block;
-          -webkit-text-stroke: 6px white;
-          paint-order: stroke fill;
-          opacity: 0;
-          transform: translateY(40px);
-        }
-      
-        .title span.show {
-          opacity: 1;
-          transform: translateY(0);
-          transition: all 0.4s ease;
-        }
-      </style>
+    <section class="relative py-20 ">
 
-     <!-- <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-       <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-pink-700 transition">
-         Admission Open
-       </a>
-       <a href="#" class="bg-white text-pink-600 px-6 py-3 rounded-lg text-lg hover:bg-gray-200 transition">
-         Book a Visit
-       </a>
-     </div> -->
+        <!-- Decorative Blobs -->
+        <div
+            class="absolute -top-16 -left-16 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply opacity-40 blur-3xl">
+        </div>
+        <div
+            class="absolute -bottom-16 -right-16 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply opacity-40 blur-3xl">
+        </div>
 
- </section>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-    
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Image Side -->
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80"
+                            alt="Happy preschool children learning" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-yellow-400 text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold">
+                        18 Months – 6.5 Years
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div>
+
+                    <!-- Tagline -->
+                    <p class="text-pink-500 font-semibold uppercase tracking-wider mb-3 text-sm">
+                        Where the learning is magical
+                    </p>
+
+                    <!-- Title -->
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
+                        style="font-family: 'Baloo 2', cursive;">
+                        Welcome to Kinder Magic Preschool
+                    </h2>
+
+                    <!-- Decorative Line -->
+                    <div class="w-24 h-2 bg-gradient-to-r from-pink-400 to-blue-400 rounded-full mt-4 mb-6"></div>
+
+                    <!-- Content -->
+                    <p class="text-gray-600 text-lg leading-relaxed mb-4" style="font-family: 'Nunito', sans-serif;">
+                        Kinder Magic Preschool provides quality early childhood education in a safe and comfortable
+                        environment.
+                        We prepare children to become confident students by building strong basic skills in language,
+                        numbers, life skills and discipline.
+                    </p>
+
+                    <p class="text-gray-600 text-lg leading-relaxed" style="font-family: 'Nunito', sans-serif;">
+                        We combine Montessori methods with a structured K12 learning approach to give your child the
+                        best start.
+                    </p>
+
+                    <!-- CTA Button -->
+                    <div class="mt-8">
+                        <a href="#"
+                            class="inline-block bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-pink-600 transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="relative py-20 overflow-hidden">
+
+        <!-- Soft Decorative Shapes -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+            <!-- Section Title -->
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800">
+                    Why Kinder Magic Preschool?
+                </h2>
+                <div class="w-24 h-2 bg-gradient-to-r from-pink-400 to-blue-400 rounded-full mx-auto mt-4"></div>
+            </div>
+
+            <!-- Main Highlights Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- NEP Badge -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-300 text-center">
+                    <span class="material-symbols-rounded text-5xl text-green-500 mb-4 block">
+                        verified
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">
+                        Aligned with NEP & NCF
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Curriculum structured as per national early education standards.
+                    </p>
+                </div>
+
+                <!-- Kreedo Badge -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-300 text-center">
+                    <span class="material-symbols-rounded text-5xl text-purple-500 mb-4 block">
+                        school
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">
+                        Powered by Kreedo
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Backed by Kreedo Early Childhood Solutions for structured learning excellence.
+                    </p>
+                </div>
+
+                <!-- 6T Framework -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-300 text-center">
+                    <span class="material-symbols-rounded text-5xl text-pink-500 mb-4 block">
+                        auto_awesome
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">
+                        Innovative 6T Learning Framework
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Toys & Games, Theory, Time Table, Teachers, Technology, Teamwork.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-16">
+
+            <!-- Horizontal Line Behind -->
+            <div class="relative">
+              
+              <!-- Center Line -->
+              <div class="hidden md:block absolute top-1/2 left-0 w-full h-2 bg-green-500 rounded-full -translate-y-1/2 z-0"></div>
+        
+              <!-- Buttons -->
+              <div class="relative z-10 flex flex-wrap justify-center gap-6 md:gap-16">
+        
+                <!-- Playgroup -->
+                <a href="#" class="px-8 py-3 rounded-2xl text-white font-bold text-lg shadow-lg bg-purple-600 hover:scale-105 transition duration-300">
+                  Playgroup
+                </a>
+        
+                <!-- Nursery -->
+                <a href="#" class="px-8 py-3 rounded-2xl text-white font-bold text-lg shadow-lg bg-green-600 hover:scale-105 transition duration-300">
+                  Nursery
+                </a>
+        
+                <!-- Jr KG -->
+                <a href="#" class="px-8 py-3 rounded-2xl text-white font-bold text-lg shadow-lg bg-pink-600 hover:scale-105 transition duration-300">
+                  Jr. KG
+                </a>
+        
+                <!-- Sr KG -->
+                <a href="#" class="px-8 py-3 rounded-2xl text-white font-bold text-lg shadow-lg bg-sky-500 hover:scale-105 transition duration-300">
+                  Sr. KG
+                </a>
+        
+              </div>
+        
+            </div>
+        
+          </div>
+    </section>
+
 </body>
 <script src="js/index.js"></script>
 <script src="js/title.js"></script>
