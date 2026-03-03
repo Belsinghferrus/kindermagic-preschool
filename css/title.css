@@ -1,0 +1,14 @@
+#animated-title span {
+    font-family: 'Baloo 2', cursive;
+    display: inline-block;
+    -webkit-text-stroke: 6px white;
+    paint-order: stroke fill;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.4s ease;
+  }
+
+  #animated-title span.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

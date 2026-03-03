@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder Magic Preschool – Best Early Learning School for Kids</title>
+    <meta name="description" content="Kinder Magic Preschool offers the best early childhood education for kids aged 18 months to 6.5 years. Admissions open now." />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+
+ 
+    <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+
+
+
+
+<body>
+
+      <!-- NAVBAR -->
+  <nav class="bg-transparent fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-pink-600">
+          
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-pink-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-pink-600">Programs</a>
+          <a href="#" class="text-gray-700 hover:text-pink-600">Gallery</a>
+          <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
+          <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">Admission Open</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700">Home</a>
+      <a href="#" class="block py-2 text-gray-700">About</a>
+      <a href="#" class="block py-2 text-gray-700">Programs</a>
+      <a href="#" class="block py-2 text-gray-700">Gallery</a>
+      <a href="#" class="block py-2 text-gray-700">Contact</a>
+      <!-- <a href="#" class="block mt-2 bg-pink-600 text-white px-4 py-2 rounded-lg text-center">Admission Open</a> -->
+    </div>
+  </nav>
+
+
+   <!-- HERO SECTION -->
+   <section 
+   class="h-screen bg-cover bg-center flex items-center justify-center text-center relative"
+   style="background-image: url('./assets/images/Sk1.jpg');"
+ >
+   <!-- Overlay -->
+   <!-- <div class="absolute inset-0 bg-black bg-opacity-50"></div> -->
+
+
+    <div class="text-center mb-10">
+        <h1 id="line1" class="title text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold"></h1>
+        <h1 id="line2" class="title text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mt-2"></h1>
+      </div>
+  
+      <style>
+        .title span {
+          font-family: 'Baloo 2', cursive;
+          display: inline-block;
+          -webkit-text-stroke: 6px white;
+          paint-order: stroke fill;
+          opacity: 0;
+          transform: translateY(40px);
+        }
+      
+        .title span.show {
+          opacity: 1;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+        }
+      </style>
+
+     <!-- <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+       <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-pink-700 transition">
+         Admission Open
+       </a>
+       <a href="#" class="bg-white text-pink-600 px-6 py-3 rounded-lg text-lg hover:bg-gray-200 transition">
+         Book a Visit
+       </a>
+     </div> -->
+
+ </section>
+
+    
+</body>
+<script src="/js/index.js"></script>
+<script src="/js/title.js"></script>
+
+</html>
