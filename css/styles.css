@@ -1,3 +1,11 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
 .title span {
     font-family: 'Baloo 2', cursive;
     display: inline-block;
@@ -48,3 +56,17 @@
     padding: 10px;
     font-size: 14px;
   }
+
+ @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+    }
+    
+    .animate-float {
+    animation: float 6s ease-in-out infinite;
+    }
+    
+    .delay-200 { animation-delay: .5s; }
+    .delay-300 { animation-delay: .8s; }
+    .delay-400 { animation-delay: 1.2s; }
