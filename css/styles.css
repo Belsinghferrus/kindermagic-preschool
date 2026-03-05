@@ -70,3 +70,22 @@
     .delay-200 { animation-delay: .5s; }
     .delay-300 { animation-delay: .8s; }
     .delay-400 { animation-delay: 1.2s; }
+
+
+    @keyframes floatBubble {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+        }
+        
+        .animate-float{
+        animation: floatBubble 6s ease-in-out infinite;
+        }
+        
+        .delay-200{
+        animation-delay: .8s;
+        }
+        
+        .delay-400{
+        animation-delay: 1.6s;
+        }
