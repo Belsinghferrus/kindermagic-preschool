@@ -20,49 +20,122 @@
 </head>
 
 <body>
-    <section class="relative h-[1000px] flex items-center justify-center text-center overflow-hidden">
+    <section class="relative h-[1000px] flex items-center justify-center overflow-hidden">
 
         <!-- Background Image -->
-        <img src="./assets/images/class.jpeg" class="absolute inset-0 w-full h-full object-cover">
-
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/50"></div>
-
-        <!-- Decorative Shape -->
-        <div class="absolute bottom-0 left-0 w-full">
-            <svg viewBox="0 0 1440 120" class="w-full">
-                <path fill="#ffffff"
-                    d="M0,96L80,85.3C160,75,320,53,480,53.3C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L0,120Z">
-                </path>
-            </svg>
-        </div>
-
-        <!-- Content -->
-        <div class="relative z-10 text-white px-6 text-center">
-
-            <!-- Tagline Badge -->
-            <div class="inline-block bg-white/20 backdrop-blur px-4 py-1 rounded-full text-sm tracking-wide mb-4">
+    
+        <img src="./assets/images/class.jpeg"
+            class="absolute inset-0 w-full h-full object-cover scale-105">
+    
+        <!-- Gradient Overlay -->
+    
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+    
+    
+    
+        <!-- Soft Blur Shapes -->
+    
+        <div class="absolute top-20 left-20 w-72 h-72 bg-yellow-300/30 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-20 right-20 w-72 h-72 bg-blue-300/30 rounded-full blur-[120px]"></div>
+    
+    
+    
+        <!-- Main Content -->
+    
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+    
+            <!-- Badge -->
+    
+            <div
+                class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm text-white mb-6 shadow-lg">
+    
                 🌈 Our Story
+    
             </div>
-
+    
+    
+    
             <!-- Title -->
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                About <span class="text-yellow-300">Kinder Magic</span> Preschool
+    
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+    
+                About
+    
+                <span
+                    class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text">
+    
+                    Kinder Magic
+    
+                </span>
+    
+                Preschool
+    
             </h1>
-
+    
+    
+    
             <!-- Subtitle -->
-            <p class="mt-5 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                Nurturing young minds through joyful learning, creativity, and strong foundations for lifelong success.
+    
+            <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+    
+                At Kinder Magic, we believe every child is unique and full of
+                potential. Our learning environment encourages curiosity,
+                creativity, and joyful discovery during the most important
+                early years of development.
+    
             </p>
-
-            <!-- Decorative Dots -->
-            <div class="flex justify-center gap-2 mt-6">
+    
+    
+    
+            <!-- Highlight Points -->
+    
+            <div class="flex flex-wrap justify-center gap-4 mt-10 text-sm">
+    
+                <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
+                    🎓 Early Learning Excellence
+                </span>
+    
+                <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
+                    🧸 Safe & Nurturing Environment
+                </span>
+    
+                <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
+                    🌱 Holistic Child Development
+                </span>
+    
+            </div>
+    
+    
+    
+            <!-- Decorative Indicators -->
+    
+            <div class="flex justify-center gap-2 mt-10">
+    
                 <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+    
             </div>
-
+    
         </div>
+    
+    
+    
+        <!-- Bottom Wave -->
+    
+        <div class="absolute bottom-0 left-0 w-full">
+    
+            <svg viewBox="0 0 1440 150" class="w-full">
+    
+                <path fill="#ffffff"
+                    d="M0,96L80,90C160,85,320,75,480,74.7C640,75,800,85,960,96C1120,107,1280,117,1360,122.7L1440,128L1440,150L0,150Z">
+                </path>
+    
+            </svg>
+    
+        </div>
+    
     </section>
 
 
