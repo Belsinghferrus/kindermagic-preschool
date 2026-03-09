@@ -20,122 +20,206 @@
 </head>
 
 <body>
+
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/40 md:bg-transparent border-b border-white/10 z-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- LOGO -->
+                <div class="text-2xl font-bold text-pink-600 w-48">
+                    KINDERMAGIC
+                </div>
+
+                <!-- DESKTOP MENU -->
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+
+                    <a href="index.html" class="text-white hover:text-pink-600 transition">Home</a>
+                    <a href="about.html" class="text-white hover:text-pink-600 transition">About</a>
+                    <a href="program.html" class="text-white hover:text-pink-600 transition">Programs</a>
+                    <a href="gallery.html" class="text-white hover:text-pink-600 transition">Gallery</a>
+
+                    <a href="admission.html"
+                        class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">
+                        Admission
+                    </a>
+
+                </div>
+
+                <!-- MOBILE BUTTON -->
+                <button id="menu-btn"
+                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-white/10 transition z-50">
+
+                    <!-- Hamburger -->
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                    <!-- Close -->
+                    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hidden"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 border-t border-white/10 z-40">
+
+        <div class="flex flex-col items-center py-8 space-y-6 text-lg font-medium">
+
+            <a href="index.html" class="text-white hover:text-pink-400 transition">
+                Home
+            </a>
+
+            <a href="about.html" class="text-white hover:text-pink-400 transition">
+                About
+            </a>
+
+            <a href="program.html" class="text-white hover:text-pink-400 transition">
+                Programs
+            </a>
+
+            <a href="gallery.html" class="text-white hover:text-pink-400 transition">
+                Gallery
+            </a>
+
+            <a href="admission.html" class="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition">
+                Admission
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
     <section class="relative h-[1000px] flex items-center justify-center overflow-hidden">
 
         <!-- Background Image -->
-    
-        <img src="./assets/images/class.jpeg"
-            class="absolute inset-0 w-full h-full object-cover scale-105">
-    
+
+        <img src="./assets/images/class.jpeg" class="absolute inset-0 w-full h-full object-cover scale-105">
+
         <!-- Gradient Overlay -->
-    
+
         <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
-    
-    
-    
+
+
+
         <!-- Soft Blur Shapes -->
-    
+
         <div class="absolute top-20 left-20 w-72 h-72 bg-yellow-300/30 rounded-full blur-[120px]"></div>
         <div class="absolute bottom-20 right-20 w-72 h-72 bg-blue-300/30 rounded-full blur-[120px]"></div>
-    
-    
-    
+
+
+
         <!-- Main Content -->
-    
+
         <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-    
+
             <!-- Badge -->
-    
+
             <div
                 class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm text-white mb-6 shadow-lg">
-    
+
                 🌈 Our Story
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Title -->
-    
+
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-    
+
                 About
-    
-                <span
-                    class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text">
-    
+
+                <span class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text">
+
                     Kinder Magic
-    
+
                 </span>
-    
+
                 Preschool
-    
+
             </h1>
-    
-    
-    
+
+
+
             <!-- Subtitle -->
-    
+
             <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-    
+
                 At Kinder Magic, we believe every child is unique and full of
                 potential. Our learning environment encourages curiosity,
                 creativity, and joyful discovery during the most important
                 early years of development.
-    
+
             </p>
-    
-    
-    
+
+
+
             <!-- Highlight Points -->
-    
+
             <div class="flex flex-wrap justify-center gap-4 mt-10 text-sm">
-    
+
                 <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
                     🎓 Early Learning Excellence
                 </span>
-    
+
                 <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
                     🧸 Safe & Nurturing Environment
                 </span>
-    
+
                 <span class="bg-white/15 backdrop-blur px-4 py-2 text-white rounded-full">
                     🌱 Holistic Child Development
                 </span>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Decorative Indicators -->
-    
             <div class="flex justify-center gap-2 mt-10">
-    
                 <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-    
             </div>
-    
+
         </div>
-    
-    
-    
+
+
+
         <!-- Bottom Wave -->
-    
+
         <div class="absolute bottom-0 left-0 w-full">
-    
+
             <svg viewBox="0 0 1440 150" class="w-full">
-    
+
                 <path fill="#ffffff"
                     d="M0,96L80,90C160,85,320,75,480,74.7C640,75,800,85,960,96C1120,107,1280,117,1360,122.7L1440,128L1440,150L0,150Z">
                 </path>
-    
+
             </svg>
-    
+
         </div>
-    
+
     </section>
 
 
@@ -147,7 +231,7 @@
 
             <div class="relative">
 
-                <img src="https://picsum.photos/600/500" class="rounded-3xl shadow-xl">
+                <img src="/assets/images/hero3.png" class="rounded-3xl shadow-xl">
 
                 <!-- decorative element -->
 
@@ -416,13 +500,13 @@
 
                 <div class="relative">
 
-                    <img src="https://picsum.photos/500/350?1" class="rounded-3xl shadow-lg">
+                    <img src="/assets/images/class2.jpeg" class="rounded-3xl shadow-lg">
 
-                    <img src="https://picsum.photos/260/200?2"
-                        class="absolute -bottom-10 -left-10 rounded-2xl shadow-lg border-4 border-white">
+                    <img src="/assets/images/kid6.jpeg"
+                        class="absolute -bottom-10 -left-10 rounded-2xl h-40 shadow-lg border-4 border-white">
 
-                    <img src="https://picsum.photos/260/200?3"
-                        class="absolute -top-10 -right-10 rounded-2xl shadow-lg border-4 border-white">
+                    <img src="/assets/images/class3.jpeg"
+                        class="absolute -top-10 -right-10 rounded-2xl h-32 shadow-lg border-4 border-white">
 
                 </div>
 
@@ -538,5 +622,7 @@
 
     </section>
 </body>
+
+<script src="js/index.js"></script>
 
 </html>
