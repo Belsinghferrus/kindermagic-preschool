@@ -1,11 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kinder Magic Preschool – Best Early Learning School for Kids</title>
+    <meta name="description"
+        content="Kinder Magic Preschool offers the best early childhood education for kids aged 18 months to 6.5 years. Admissions open now." />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
+
+    <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/40 md:bg-transparent border-b border-white/10 z-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
     
+                <!-- LOGO -->
+                <div class="text-2xl font-bold text-pink-600 w-48">
+                    KINDERMAGIC
+                </div>
+    
+                <!-- DESKTOP MENU -->
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+    
+                    <a href="index.html" class="text-white hover:text-pink-600 transition">Home</a>
+                    <a href="about.html" class="text-white hover:text-pink-600 transition">About</a>
+                    <a href="program.html" class="text-white hover:text-pink-600 transition">Programs</a>
+                    <a href="gallery.html" class="text-white hover:text-pink-600 transition">Gallery</a>
+    
+                    <a href="admission.html"
+                       class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">
+                       Admission
+                    </a>
+    
+                </div>
+    
+                <!-- MOBILE BUTTON -->
+                <button id="menu-btn"
+                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-white/10 transition z-50">
+    
+                    <!-- Hamburger -->
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg"
+                         class="h-6 w-6 text-white"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+    
+                    </svg>
+    
+                    <!-- Close -->
+                    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg"
+                         class="h-6 w-6 text-white hidden"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"/>
+    
+                    </svg>
+    
+                </button>
+    
+            </div>
+        </div>
+    
+    </nav>
+    
+    
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+    class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 border-t border-white/10 z-40">
+    
+        <div class="flex flex-col items-center py-8 space-y-6 text-lg font-medium">
+    
+            <a href="index.html" class="text-white hover:text-pink-400 transition">
+                Home
+            </a>
+    
+            <a href="about.html" class="text-white hover:text-pink-400 transition">
+                About
+            </a>
+    
+            <a href="program.html" class="text-white hover:text-pink-400 transition">
+                Programs
+            </a>
+    
+            <a href="gallery.html" class="text-white hover:text-pink-400 transition">
+                Gallery
+            </a>
+    
+            <a href="admission.html"
+               class="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition">
+               Admission
+            </a>
+    
+        </div>
+    
+    </div>
+    
+
+
+    <section class="relative h-[1000px] flex items-center justify-center text-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="./assets/images/hero6.jpeg" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <!-- Decorative wave -->
+        <div class="absolute bottom-0 left-0 w-full">
+            <svg viewBox="0 0 1440 120" class="w-full">
+                <path fill="#ffffff"
+                    d="M0,96L80,85.3C160,75,320,53,480,53.3C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L0,120Z">
+                </path>
+            </svg>
+        </div>
+
+
+        <!-- Floating gallery icons -->
+        <div class="absolute top-24 left-20 text-5xl opacity-30">📸</div>
+        <div class="absolute top-40 right-24 text-5xl opacity-30">🎨</div>
+        <div class="absolute bottom-40 left-28 text-5xl opacity-30">🧸</div>
+        <div class="absolute bottom-28 right-20 text-5xl opacity-30">🖍</div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-white px-6 text-center">
+
+            <!-- Badge -->
+            <div class="inline-block bg-white/20 backdrop-blur px-4 py-1 rounded-full text-sm tracking-wide mb-4">
+                📷 School Moments
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Kinder Magic <span class="text-yellow-300">Gallery</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="mt-5 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                A glimpse into the joyful moments, creative activities and
+                learning experiences of our children at Kinder Magic Preschool.
+            </p>
+
+            <!-- Tag bubbles -->
+            <div class="flex flex-wrap justify-center gap-3 mt-6 text-sm">
+
+           
+
+                <span class="bg-white/20 backdrop-blur px-4 py-1 rounded-full">
+                    🎉 Events
+                </span>
+
+                <span class="bg-white/20 backdrop-blur px-4 py-1 rounded-full">
+                    📚 Learning
+                </span>
+
+                <span class="bg-white/20 backdrop-blur px-4 py-1 rounded-full">
+                    🧸 Playtime
+                </span>
+
+            </div>
+
+            <!-- Decorative dots -->
+            <div class="flex justify-center gap-2 mt-6">
+                <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
+                <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-28 bg-gradient-to-b from-white to-yellow-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Title -->
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    ⚽ Sports & Outdoor Activities
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Physical activities help children develop confidence, coordination
+                    and teamwork while having fun with their friends.
+                </p>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+
+                <!-- Large Image -->
+
+                <div class="md:col-span-2 md:row-span-2 overflow-hidden rounded-3xl shadow-xl">
+
+                    <img src="/assets/images/sport1.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Text Block -->
+
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <div class="text-3xl mb-3">🏃‍♂️</div>
+
+                    <h3 class="font-semibold text-gray-800 text-lg">
+                        Active Playtime
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-2">
+                        Children participate in fun physical activities that
+                        improve their strength, coordination and teamwork skills.
+                    </p>
+
+                </div>
+
+
+                <!-- Image -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/sport2.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Image -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/sport3.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Text Block -->
+
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <div class="text-3xl mb-3">🤝</div>
+
+                    <h3 class="font-semibold text-gray-800 text-lg">
+                        Team Spirit
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-2">
+                        Through games and sports activities, children learn
+                        the value of teamwork, sharing and supporting each other.
+                    </p>
+
+                </div>
+
+
+                <!-- Image -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/sport4.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-28 bg-gradient-to-b from-white to-green-50">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Title -->
+
+            <div class="text-center mb-20">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    🧘 Kids Yoga Classes
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Our yoga sessions help children develop focus, balance and relaxation
+                    through simple breathing exercises and playful yoga poses.
+                </p>
+
+            </div>
+
+
+
+            <!-- Image Grid -->
+
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+
+                <!-- Image 1 -->
+
+                <div>
+
+                    <div class="overflow-hidden rounded-full shadow-lg w-48 h-48 mx-auto">
+
+                        <img src="/assets/images/yoga1.jpeg"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <p class="mt-4 text-gray-700 font-medium">
+                        Better Focus
+                    </p>
+
+                    <p class="text-sm text-gray-500">
+                        Yoga helps children improve concentration during learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Image 2 -->
+
+                <div>
+
+                    <div class="overflow-hidden rounded-full shadow-lg w-48 h-48 mx-auto">
+
+                        <img src="/assets/images/yoga2.jpeg"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <p class="mt-4 text-gray-700 font-medium">
+                        Flexibility
+                    </p>
+
+                    <p class="text-sm text-gray-500">
+                        Stretching exercises improve body flexibility and balance.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Image 3 -->
+
+                <div>
+
+                    <div class="overflow-hidden rounded-full shadow-lg w-48 h-48 mx-auto">
+
+                        <img src="/assets/images/yoga4.jpeg"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <p class="mt-4 text-gray-700 font-medium">
+                        Calm Mind
+                    </p>
+
+                    <p class="text-sm text-gray-500">
+                        Breathing techniques help children feel relaxed and peaceful.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Image 4 -->
+
+                <div>
+
+                    <div class="overflow-hidden rounded-full shadow-lg w-48 h-48 mx-auto">
+
+                        <img src="/assets/images/yoga4.1.jpeg"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    </div>
+
+                    <p class="mt-4 text-gray-700 font-medium">
+                        Healthy Body
+                    </p>
+
+                    <p class="text-sm text-gray-500">
+                        Yoga builds strength, posture and healthy habits.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Quote -->
+
+            <div class="text-center mt-20">
+
+                <p class="text-lg text-gray-600 italic max-w-xl mx-auto">
+                    "Yoga helps children grow stronger, calmer and more confident every day."
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-28 bg-gradient-to-b from-white to-indigo-50">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Title -->
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    ♟️ Chess Learning
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Chess helps children develop concentration, logical thinking
+                    and problem-solving abilities in a fun and engaging way.
+                </p>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Large Image -->
+
+                <div class="relative overflow-hidden rounded-3xl shadow-xl">
+
+                    <img src="/assets/images/chess1.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    <div class="absolute bottom-0 left-0 bg-black/50 text-white px-5 py-3 text-sm">
+                        Strategic thinking through fun chess games
+                    </div>
+
+                </div>
+
+
+
+                <!-- Content -->
+
+                <div>
+
+                    <!-- Small Image -->
+
+                    <div class="overflow-hidden rounded-2xl shadow-lg mb-6">
+
+                        <img src="/assets/images/chess2.jpeg"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    </div>
+
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                        Building Young Thinkers
+                    </h3>
+
+                    <p class="text-gray-600 mb-6">
+                        Our chess sessions introduce children to basic strategies
+                        while encouraging patience, focus and creative thinking.
+                    </p>
+
+
+                    <!-- Benefits -->
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🧠 Logical Thinking
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🎯 Better Focus
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            ♟ Strategy Skills
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🤝 Patience & Discipline
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-28 bg-gradient-to-b from-white to-yellow-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Title -->
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    🏫 Our Classroom Environment
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Our classrooms are designed to be bright, colorful and safe,
+                    encouraging children to explore, learn and grow comfortably.
+                </p>
+
+            </div>
+
+
+
+            <!-- Top Layout -->
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-14">
+
+                <!-- Large Image -->
+
+                <div class="overflow-hidden rounded-3xl shadow-xl">
+
+                    <img src="/assets/images/classroomm1.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Content -->
+
+                <div>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                        A Safe and Creative Learning Space
+                    </h3>
+
+                    <p class="text-gray-600 mb-6">
+                        Our classrooms are thoughtfully arranged to provide a comfortable
+                        environment where children feel happy and confident to participate
+                        in activities and learning.
+                    </p>
+
+
+                    <!-- Classroom Features -->
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🎨 Colorful learning walls
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🪑 Child-safe furniture
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            📚 Learning corners
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🧸 Play & activity areas
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Bottom Image Grid -->
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+                    <img src="/assets/images/classroom2.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+                    <img src="/assets/images/classroom3.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+                    <img src="/assets/images/classroom4.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-28 bg-gradient-to-b from-yellow-50 to-white overflow-hidden">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Section Header -->
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    🏆 National Tournament Winner
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    A proud moment for Kinder Magic Preschool as our young champion
+                    achieved success at a national level competition.
+                </p>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                <!-- Portrait Image -->
+
+                <div class="relative flex justify-center">
+
+                    <div class="relative">
+
+                        <img src="/assets/images/trophy.jpeg" alt="Student Champion"
+                            class="rounded-[40px] shadow-2xl w-80 object-cover">
+
+                        <!-- Medal -->
+
+                        <div
+                            class="absolute -top-6 -right-6 bg-yellow-400 w-16 h-16 flex items-center justify-center rounded-full text-2xl shadow-lg">
+                            🥇
+                        </div>
+
+                        <!-- Decorative stars -->
+
+                        <div class="absolute -left-10 top-10 text-3xl opacity-40">⭐</div>
+                        <div class="absolute -right-10 bottom-20 text-3xl opacity-40">⭐</div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Text Content -->
+
+                <div>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-5">
+                        A Proud Achievement
+                    </h3>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Our student demonstrated outstanding dedication and confidence
+                        while competing at the national level tournament. This achievement
+                        highlights the encouragement and strong foundation children receive
+                        at Kinder Magic Preschool.
+                    </p>
+
+
+                    <!-- Highlights -->
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🏆 National Level Participation
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🌟 Outstanding Performance
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🎯 Strong Focus & Skill
+                        </div>
+
+                        <div class="bg-white shadow rounded-xl p-4">
+                            🎉 School Pride Moment
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Quote -->
+
+            <div class="text-center mt-20">
+
+                <p class="text-lg italic text-gray-600 max-w-xl mx-auto">
+                    “Every child has the potential to achieve greatness when given the
+                    right guidance and encouragement.”
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-28 bg-gradient-to-b from-white to-amber-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Title -->
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-4xl font-bold text-gray-800">
+                    📚 Library & Reading Corner
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Our library encourages children to explore the world of books,
+                    develop reading habits and build imagination from an early age.
+                </p>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Large Image -->
+
+                <div class="md:col-span-2 overflow-hidden rounded-3xl shadow-xl">
+
+                    <img src="/assets/images/Library.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Text Block -->
+
+                <div class="bg-white shadow-lg rounded-3xl p-6 flex flex-col justify-center">
+
+                    <div class="text-3xl mb-3">📖</div>
+
+                    <h3 class="text-lg font-semibold text-gray-800">
+                        Reading Builds Imagination
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-3">
+                        Children borrow books every week through our take-home library program.
+                        This encourages curiosity, vocabulary development and a love for stories.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Image 2 -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/library2.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Image 3 -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/library3.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+
+                <!-- Image 4 -->
+
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+
+                    <img src="/assets/images/library4.jpeg"
+                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Reading Benefits -->
+
+            <div class="grid md:grid-cols-3 gap-6 mt-16 text-center">
+
+                <div class="bg-white shadow rounded-xl p-5">
+                    📖 Improves reading habit
+                </div>
+
+                <div class="bg-white shadow rounded-xl p-5">
+                    🧠 Builds vocabulary
+                </div>
+
+                <div class="bg-white shadow rounded-xl p-5">
+                    ✨ Develops imagination
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
 </body>
+
 </html>
