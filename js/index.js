@@ -1,3 +1,5 @@
+
+// Program Card Flip
 document.querySelectorAll('.program-card').forEach(card => {
     card.addEventListener('click', () => {
         card.querySelector('.program-inner').classList.toggle('rotate');
@@ -6,6 +8,11 @@ document.querySelectorAll('.program-card').forEach(card => {
 
 
 
+
+
+
+
+// FAQ Accordion
 document.querySelectorAll(".faq-question").forEach(button => {
 
     button.addEventListener("click", () => {
@@ -30,6 +37,9 @@ document.querySelectorAll(".faq-question").forEach(button => {
 });
 
 
+
+
+// Mobile Menu Toggle
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const menuIcon = document.getElementById("menu-icon");
