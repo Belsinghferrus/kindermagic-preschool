@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,737 +16,717 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
-      <!-- NAVBAR -->
-   <!-- NAVBAR -->
-   <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/40 md:bg-transparent border-b border-white/10 z-50">
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/40 md:bg-transparent border-b border-white/10 z-50">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
 
-            <!-- LOGO -->
-            <div class="text-2xl font-bold text-pink-600 w-48">
-                KINDERMAGIC
+                <!-- LOGO -->
+                <div class="text-2xl font-bold text-pink-600 w-48">
+                    KINDERMAGIC
+                </div>
+
+                <!-- DESKTOP MENU -->
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+
+                    <a href="./index.html" class="text-white hover:text-pink-600 transition">Home</a>
+                    <a href="./about.html" class="text-white hover:text-pink-600 transition">About</a>
+                    <a href="./program.html" class="text-white hover:text-pink-600 transition">Programs</a>
+                    <a href="./gallery.html" class="text-white hover:text-pink-600 transition">Gallery</a>
+
+                    <a href="./admission.html"
+                        class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">
+                        Admission
+                    </a>
+
+                </div>
+
+                <!-- MOBILE BUTTON -->
+                <button id="menu-btn"
+                    class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-white/10 transition z-50">
+
+                    <!-- Hamburger -->
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                    <!-- Close -->
+                    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hidden"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+
+                    </svg>
+
+                </button>
+
             </div>
+        </div>
 
-            <!-- DESKTOP MENU -->
-            <div class="hidden md:flex items-center space-x-8 font-medium">
+    </nav>
 
-                <a href="index.html" class="text-white hover:text-pink-600 transition">Home</a>
-                <a href="about.html" class="text-white hover:text-pink-600 transition">About</a>
-                <a href="program.html" class="text-white hover:text-pink-600 transition">Programs</a>
-                <a href="gallery.html" class="text-white hover:text-pink-600 transition">Gallery</a>
 
-                <a href="admission.html"
-                   class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">
-                   Admission
-                </a>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 border-t border-white/10 z-40">
 
-            </div>
+        <div class="flex flex-col items-center py-8 space-y-6 text-lg font-medium">
 
-            <!-- MOBILE BUTTON -->
-            <button id="menu-btn"
-                class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-white/10 transition z-50">
+            <a href="./index.html" class="text-white hover:text-pink-400 transition">
+                Home
+            </a>
 
-                <!-- Hamburger -->
-                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg"
-                     class="h-6 w-6 text-white"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <a href="./about.html" class="text-white hover:text-pink-400 transition">
+                About
+            </a>
 
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"/>
+            <a href="./program.html" class="text-white hover:text-pink-400 transition">
+                Programs
+            </a>
 
-                </svg>
+            <a href="./gallery.html" class="text-white hover:text-pink-400 transition">
+                Gallery
+            </a>
 
-                <!-- Close -->
-                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg"
-                     class="h-6 w-6 text-white hidden"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M6 18L18 6M6 6l12 12"/>
-
-                </svg>
-
-            </button>
+            <a href="./admission.html" class="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition">
+                Admission
+            </a>
 
         </div>
-    </div>
-
-</nav>
-
-
-<!-- MOBILE MENU -->
-<div id="mobile-menu"
-class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 border-t border-white/10 z-40">
-
-    <div class="flex flex-col items-center py-8 space-y-6 text-lg font-medium">
-
-        <a href="index.html" class="text-white hover:text-pink-400 transition">
-            Home
-        </a>
-
-        <a href="about.html" class="text-white hover:text-pink-400 transition">
-            About
-        </a>
-
-        <a href="program.html" class="text-white hover:text-pink-400 transition">
-            Programs
-        </a>
-
-        <a href="gallery.html" class="text-white hover:text-pink-400 transition">
-            Gallery
-        </a>
-
-        <a href="admission.html"
-           class="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition">
-           Admission
-        </a>
 
     </div>
-
-</div>
 
 
 
     <section class="relative h-[1000px] flex items-center justify-center overflow-hidden text-center">
 
         <!-- Background Image -->
-        <img src="./assets/images/hero4.png"
-            class="absolute inset-0 w-full h-full object-cover scale-110">
-    
+        <img src="./assets/images/hero4.png" class="absolute inset-0 w-full h-full object-cover scale-110">
+
         <!-- Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
-    
-    
-    
+
+
+
         <!-- Decorative Blurs -->
-    
+
         <div class="absolute top-32 left-16 w-80 h-80 bg-yellow-300/30 rounded-full blur-[120px]"></div>
         <div class="absolute bottom-32 right-16 w-80 h-80 bg-blue-300/30 rounded-full blur-[120px]"></div>
-    
-    
-    
+
+
+
         <!-- Floating Icons -->
-    
+
         <div class="absolute top-24 left-32 text-4xl opacity-70 animate-bounce">🎒</div>
         <div class="absolute top-36 right-32 text-4xl opacity-70 animate-pulse">📚</div>
         <div class="absolute bottom-40 left-24 text-4xl opacity-70 animate-bounce">🧸</div>
         <div class="absolute bottom-36 right-24 text-4xl opacity-70 animate-pulse">🎨</div>
-    
-    
-    
+
+
+
         <!-- Content -->
-    
+
         <div class="relative z-10 text-white px-6 max-w-5xl">
-    
-    
-    
-            <!-- Admissions Badge -->
-    
-            <!-- <div
-                class="inline-flex items-center gap-2 bg-green-400/20 border border-green-300/40 backdrop-blur-md px-5 py-2 rounded-full text-sm mb-6">
-    
-                <span class="text-green-300">●</span>
-                Admissions Open Now
-    
-            </div>
-     -->
-    
-    
+
+
+
+
+
             <!-- Title -->
-    
+
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-    
+
                 Admissions Open for
-    
+
                 <span class="text-yellow-300">
                     Academic Year 2026 – 2027
                 </span>
-    
+
             </h1>
-    
-    
-    
+
+
+
             <!-- Subtitle -->
-    
+
             <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
-    
+
                 Join our nurturing preschool environment designed to help children
                 grow with confidence, creativity and joyful learning.
-    
+
             </p>
-    
-    
-    
+
+
+
             <!-- Eligibility Highlight -->
-    
-            <div
-                class="mt-10 inline-flex items-center gap-3 bg-white/15 backdrop-blur-lg px-6 py-3 rounded-xl">
-    
+
+            <div class="mt-10 inline-flex items-center gap-3 bg-white/15 backdrop-blur-lg px-6 py-3 rounded-xl">
+
                 <span class="text-yellow-300 text-xl">👶</span>
-    
+
                 <p class="text-sm text-gray-100">
-    
+
                     Eligibility: Children aged
                     <span class="font-semibold text-yellow-300">
                         18 months – 6.5 years
                     </span>
-    
+
                 </p>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Admission Steps Preview -->
-    
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 text-sm">
-    
+
                 <div class="bg-white/10 backdrop-blur-lg rounded-xl p-5">
-    
+
                     <div class="text-2xl mb-1">🏫</div>
-    
+
                     <p class="font-medium">
                         Visit School
                     </p>
-    
+
                 </div>
-    
-    
-    
+
+
+
                 <div class="bg-white/10 backdrop-blur-lg rounded-xl p-5">
-    
+
                     <div class="text-2xl mb-1">📝</div>
-    
+
                     <p class="font-medium">
                         Fill Enquiry
                     </p>
-    
+
                 </div>
-    
-    
-    
+
+
+
                 <div class="bg-white/10 backdrop-blur-lg rounded-xl p-5">
-    
+
                     <div class="text-2xl mb-1">📄</div>
-    
+
                     <p class="font-medium">
                         Submit Documents
                     </p>
-    
+
                 </div>
-    
-    
-    
+
+
+
                 <div class="bg-white/10 backdrop-blur-lg rounded-xl p-5">
-    
+
                     <div class="text-2xl mb-1">✅</div>
-    
+
                     <p class="font-medium">
                         Confirm Admission
                     </p>
-    
+
                 </div>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- CTA Buttons -->
-    
+
             <div class="flex flex-wrap justify-center gap-4 mt-14">
-    
+
                 <a href="#enquiry"
                     class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-8 py-3 rounded-full transition shadow-lg">
-    
+
                     Submit Enquiry
-    
+
                 </a>
-    
-    
+
+
                 <a href="#process"
                     class="bg-white/20 border border-white/30 backdrop-blur-md hover:bg-white/30 text-white px-8 py-3 rounded-full transition">
-    
+
                     View Admission Process
-    
+
                 </a>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Decorative Indicators -->
-    
+
             <div class="flex justify-center gap-2 mt-10">
-    
+
                 <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
                 <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-    
+
             </div>
-    
+
         </div>
-    
-    
-    
+
+
+
         <!-- Bottom Wave -->
-    
+
         <div class="absolute bottom-0 left-0 w-full">
-    
+
             <svg viewBox="0 0 1440 140" class="w-full">
-    
+
                 <path fill="#ffffff"
                     d="M0,96L80,90C160,85,320,75,480,74.7C640,75,800,85,960,96C1120,107,1280,117,1360,122.7L1440,128L1440,140L0,140Z">
                 </path>
-    
+
             </svg>
-    
+
         </div>
-    
+
     </section>
 
 
     <section id="process" class="py-28 bg-white relative overflow-hidden">
 
         <!-- Decorative background shapes -->
-    
+
         <div class="absolute top-20 left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-40"></div>
         <div class="absolute bottom-10 right-10 w-72 h-72 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
-    
-    
+
+
         <div class="max-w-7xl mx-auto px-6">
-    
+
             <!-- Section Heading -->
-    
+
             <div class="text-center mb-20">
-    
+
                 <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm">
                     Admission Steps
                 </span>
-    
+
                 <h2 class="text-4xl font-bold text-gray-800 mt-5">
                     Simple Admission Process
                 </h2>
-    
+
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
                     Our admission process is designed to be simple and parent-friendly.
                     Follow the steps below to enroll your child.
                 </p>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Steps Container -->
-    
+
             <div class="relative">
-    
+
                 <!-- Center Line -->
-    
+
                 <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-100"></div>
-    
-    
-    
+
+
+
                 <div class="space-y-20">
-    
+
                     <!-- Step 1 -->
-    
+
                     <div class="grid md:grid-cols-2 gap-12 items-center">
-    
+
                         <div class="md:text-right">
-    
+
                             <h3 class="text-2xl font-semibold text-gray-800">
                                 Step 1 – Visit School
                             </h3>
-    
+
                             <p class="text-gray-600 mt-3 leading-relaxed">
                                 Parents are welcome to visit our campus, explore the
                                 classrooms and meet our teachers to understand the
                                 learning environment.
                             </p>
-    
+
                         </div>
-    
+
                         <div class="flex justify-center md:justify-start">
-    
+
                             <div
                                 class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center text-3xl shadow-md">
-    
+
                                 🏫
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
-    
-    
-    
+
+
+
                     <!-- Step 2 -->
-    
+
                     <div class="grid md:grid-cols-2 gap-12 items-center">
-    
+
                         <div class="flex justify-center md:justify-end order-2 md:order-1">
-    
+
                             <div
                                 class="w-20 h-20 rounded-full bg-yellow-100 flex items-center justify-center text-3xl shadow-md">
-    
+
                                 📝
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div class="order-1 md:order-2">
-    
+
                             <h3 class="text-2xl font-semibold text-gray-800">
                                 Step 2 – Fill Enquiry Form
                             </h3>
-    
+
                             <p class="text-gray-600 mt-3 leading-relaxed">
                                 Fill the enquiry form with basic details so our team
                                 can guide you through the admission process.
                             </p>
-    
+
                         </div>
-    
+
                     </div>
-    
-    
-    
+
+
+
                     <!-- Step 3 -->
-    
+
                     <div class="grid md:grid-cols-2 gap-12 items-center">
-    
+
                         <div class="md:text-right">
-    
+
                             <h3 class="text-2xl font-semibold text-gray-800">
                                 Step 3 – Submit Documents
                             </h3>
-    
+
                             <p class="text-gray-600 mt-3 leading-relaxed">
                                 Submit the required documents including the child’s
                                 birth certificate and identification details.
                             </p>
-    
+
                         </div>
-    
+
                         <div class="flex justify-center md:justify-start">
-    
+
                             <div
                                 class="w-20 h-20 rounded-full bg-pink-100 flex items-center justify-center text-3xl shadow-md">
-    
+
                                 📄
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
-    
-    
-    
+
+
+
                     <!-- Step 4 -->
-    
+
                     <div class="grid md:grid-cols-2 gap-12 items-center">
-    
+
                         <div class="flex justify-center md:justify-end order-2 md:order-1">
-    
+
                             <div
                                 class="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center text-3xl shadow-md">
-    
+
                                 ✅
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div class="order-1 md:order-2">
-    
+
                             <h3 class="text-2xl font-semibold text-gray-800">
                                 Step 4 – Confirm Admission
                             </h3>
-    
+
                             <p class="text-gray-600 mt-3 leading-relaxed">
                                 Once documents are verified, complete the admission
                                 confirmation and welcome your child to our preschool.
                             </p>
-    
+
                         </div>
-    
+
                     </div>
-    
+
                 </div>
-    
+
             </div>
-    
-    
-    
+
+
+
             <!-- Bottom Highlight -->
-    
-            <div
-                class="mt-24 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-3xl p-12 text-center">
-    
+
+            <div class="mt-24 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-3xl p-12 text-center">
+
                 <h3 class="text-2xl font-bold">
                     Start Your Child’s Learning Journey Today
                 </h3>
-    
+
                 <p class="mt-3 text-blue-100 max-w-xl mx-auto">
                     Our admissions team is happy to assist you with every step
                     of the enrollment process.
                 </p>
-    
+
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <section id="enquiry" class="relative py-32 bg-gradient-to-b from-blue-50 via-white to-blue-50 overflow-hidden">
 
         <!-- decorative shapes -->
-        
+
         <div class="absolute -top-20 -left-20 w-96 h-96 bg-yellow-200/40 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl"></div>
-        
-        
-        
+
+
+
         <div class="max-w-6xl mx-auto px-6">
-        
-        <!-- heading -->
-        
-        <div class="text-center mb-16">
-        
-        <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm">
-        Admission Enquiry
-        </span>
-        
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mt-5">
-        Begin Your Child’s Admission
-        </h2>
-        
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-        Share your details and our admissions team will guide you through the
-        next steps of enrollment.
-        </p>
-        
+
+            <!-- heading -->
+
+            <div class="text-center mb-16">
+
+                <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm">
+                    Admission Enquiry
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mt-5">
+                    Begin Your Child’s Admission
+                </h2>
+
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Share your details and our admissions team will guide you through the
+                    next steps of enrollment.
+                </p>
+
+            </div>
+
+
+
+            <!-- enquiry container -->
+
+            <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-10 md:p-14">
+
+                <form class="space-y-10">
+
+                    <!-- parent info -->
+
+                    <div class="grid md:grid-cols-2 gap-8">
+
+                        <!-- parent name -->
+
+                        <div>
+                            <label class="text-sm text-gray-600">Parent Name</label>
+
+                            <div
+                                class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
+
+                                <span class="mr-3 text-gray-400">👤</span>
+
+                                <input type="text" placeholder="Enter parent name" class="w-full outline-none">
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- phone -->
+
+                        <div>
+                            <label class="text-sm text-gray-600">Phone Number</label>
+
+                            <div
+                                class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
+
+                                <span class="mr-3 text-gray-400">📞</span>
+
+                                <input type="tel" placeholder="Enter phone number" class="w-full outline-none">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- child info -->
+
+                    <div class="grid md:grid-cols-2 gap-8">
+
+                        <!-- child name -->
+
+                        <div>
+                            <label class="text-sm text-gray-600">Child Name</label>
+
+                            <div
+                                class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
+
+                                <span class="mr-3 text-gray-400">🧸</span>
+
+                                <input type="text" placeholder="Enter child name" class="w-full outline-none">
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- age -->
+
+                        <div>
+                            <label class="text-sm text-gray-600">Age of Child</label>
+
+                            <div
+                                class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
+
+                                <span class="mr-3 text-gray-400">🎂</span>
+
+                                <input type="text" placeholder="Age" class="w-full outline-none">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- program selection -->
+
+                    <div>
+
+                        <label class="text-sm text-gray-600 block mb-4">
+                            Select Program
+                        </label>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+
+                            <!-- prekg -->
+
+                            <label class="cursor-pointer">
+
+                                <input type="radio" name="program" class="hidden peer">
+
+                                <div
+                                    class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
+
+                                    <div class="text-3xl mb-2">👶</div>
+
+                                    <p class="font-semibold text-gray-800">
+                                        Pre-KG
+                                    </p>
+
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        18 months – 2.5 years
+                                    </p>
+
+                                </div>
+
+                            </label>
+
+
+
+                            <!-- lkg -->
+
+                            <label class="cursor-pointer">
+
+                                <input type="radio" name="program" class="hidden peer">
+
+                                <div
+                                    class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
+
+                                    <div class="text-3xl mb-2">📚</div>
+
+                                    <p class="font-semibold text-gray-800">
+                                        LKG
+                                    </p>
+
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        2.5 – 4 years
+                                    </p>
+
+                                </div>
+
+                            </label>
+
+
+
+                            <!-- ukg -->
+
+                            <label class="cursor-pointer">
+
+                                <input type="radio" name="program" class="hidden peer">
+
+                                <div
+                                    class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
+
+                                    <div class="text-3xl mb-2">🎓</div>
+
+                                    <p class="font-semibold text-gray-800">
+                                        UKG
+                                    </p>
+
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        4 – 6.5 years
+                                    </p>
+
+                                </div>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- submit -->
+
+                    <div class="pt-6 text-center">
+
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-12 py-4 rounded-full shadow-lg transition">
+
+                            Submit Enquiry
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- small note -->
+
+            <p class="text-center text-sm text-gray-500 mt-6">
+                Our admissions team will contact you shortly after submission.
+            </p>
+
         </div>
-        
-        
-        
-        <!-- enquiry container -->
-        
-        <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-10 md:p-14">
-        
-        <form class="space-y-10">
-        
-        <!-- parent info -->
-        
-        <div class="grid md:grid-cols-2 gap-8">
-        
-        <!-- parent name -->
-        
-        <div>
-        <label class="text-sm text-gray-600">Parent Name</label>
-        
-        <div class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
-        
-        <span class="mr-3 text-gray-400">👤</span>
-        
-        <input
-        type="text"
-        placeholder="Enter parent name"
-        class="w-full outline-none">
-        
-        </div>
-        </div>
-        
-        
-        
-        <!-- phone -->
-        
-        <div>
-        <label class="text-sm text-gray-600">Phone Number</label>
-        
-        <div class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
-        
-        <span class="mr-3 text-gray-400">📞</span>
-        
-        <input
-        type="tel"
-        placeholder="Enter phone number"
-        class="w-full outline-none">
-        
-        </div>
-        </div>
-        
-        </div>
-        
-        
-        
-        <!-- child info -->
-        
-        <div class="grid md:grid-cols-2 gap-8">
-        
-        <!-- child name -->
-        
-        <div>
-        <label class="text-sm text-gray-600">Child Name</label>
-        
-        <div class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
-        
-        <span class="mr-3 text-gray-400">🧸</span>
-        
-        <input
-        type="text"
-        placeholder="Enter child name"
-        class="w-full outline-none">
-        
-        </div>
-        </div>
-        
-        
-        
-        <!-- age -->
-        
-        <div>
-        <label class="text-sm text-gray-600">Age of Child</label>
-        
-        <div class="mt-2 flex items-center border border-gray-200 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-blue-400">
-        
-        <span class="mr-3 text-gray-400">🎂</span>
-        
-        <input
-        type="text"
-        placeholder="Age"
-        class="w-full outline-none">
-        
-        </div>
-        </div>
-        
-        </div>
-        
-        
-        
-        <!-- program selection -->
-        
-        <div>
-        
-        <label class="text-sm text-gray-600 block mb-4">
-        Select Program
-        </label>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-        
-        <!-- prekg -->
-        
-        <label class="cursor-pointer">
-        
-        <input type="radio" name="program" class="hidden peer">
-        
-        <div class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
-        
-        <div class="text-3xl mb-2">👶</div>
-        
-        <p class="font-semibold text-gray-800">
-        Pre-KG
-        </p>
-        
-        <p class="text-xs text-gray-500 mt-1">
-        18 months – 2.5 years
-        </p>
-        
-        </div>
-        
-        </label>
-        
-        
-        
-        <!-- lkg -->
-        
-        <label class="cursor-pointer">
-        
-        <input type="radio" name="program" class="hidden peer">
-        
-        <div class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
-        
-        <div class="text-3xl mb-2">📚</div>
-        
-        <p class="font-semibold text-gray-800">
-        LKG
-        </p>
-        
-        <p class="text-xs text-gray-500 mt-1">
-        2.5 – 4 years
-        </p>
-        
-        </div>
-        
-        </label>
-        
-        
-        
-        <!-- ukg -->
-        
-        <label class="cursor-pointer">
-        
-        <input type="radio" name="program" class="hidden peer">
-        
-        <div class="border border-gray-200 rounded-xl p-6 text-center peer-checked:border-blue-500 peer-checked:bg-blue-50 transition">
-        
-        <div class="text-3xl mb-2">🎓</div>
-        
-        <p class="font-semibold text-gray-800">
-        UKG
-        </p>
-        
-        <p class="text-xs text-gray-500 mt-1">
-        4 – 6.5 years
-        </p>
-        
-        </div>
-        
-        </label>
-        
-        </div>
-        
-        </div>
-        
-        
-        
-        <!-- submit -->
-        
-        <div class="pt-6 text-center">
-        
-        <button
-        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-12 py-4 rounded-full shadow-lg transition">
-        
-        Submit Enquiry
-        
-        </button>
-        
-        </div>
-        
-        </form>
-        
-        </div>
-        
-        
-        
-        <!-- small note -->
-        
-        <p class="text-center text-sm text-gray-500 mt-6">
-        Our admissions team will contact you shortly after submission.
-        </p>
-        
-        </div>
-        
-        </section>
+
+    </section>
 </body>
 
 <footer class="relative text-gray-300">
@@ -769,7 +750,7 @@ class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 
                 Give your child a magical start to learning ✨
             </p>
 
-            <a href="/admission.html"
+            <a href="./admission.html"
                 class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full font-semibold shadow-md transition">
                 Enquire Today
             </a>
@@ -795,11 +776,11 @@ class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 
             <div>
                 <h4 class="font-semibold text-white mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-gray-300 text-sm">
-                    <li><a href="/index.html" class="hover:text-pink-400">Home</a></li>
-                    <li><a href="/about.html" class="hover:text-pink-400">About Us</a></li>
-                    <li><a href="/program.html" class="hover:text-pink-400">Programs</a></li>
-                    <li><a href="/gallery.html" class="hover:text-pink-400">Gallery</a></li>
-                    <li><a href="/admission.html" class="hover:text-pink-400">Admissions</a></li>
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About Us</a></li>
+                    <li><a href="./program.html" class="hover:text-pink-400">Programs</a></li>
+                    <li><a href="./gallery.html" class="hover:text-pink-400">Gallery</a></li>
+                    <li><a href="./admission.html" class="hover:text-pink-400">Admissions</a></li>
                 </ul>
             </div>
 
@@ -818,7 +799,8 @@ class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 
             <div>
                 <h4 class="font-semibold text-white mb-4">Contact Us</h4>
                 <ul class="space-y-3 text-gray-300 text-sm">
-                    <li>📍 No 24, First Floor, <br>5th East Street, <br> Kaaraj Nagar, Thiruvanmiyur, <br> chennai - 600041</li>
+                    <li>📍 No 24, First Floor, <br>5th East Street, <br> Kaaraj Nagar, Thiruvanmiyur, <br> chennai -
+                        600041</li>
                     <li>📞 +91 95000 51350</li>
                     <li>✉️ magiccarpetfun08@gmail.com</li>
                 </ul>
@@ -835,13 +817,13 @@ class="hidden md:hidden fixed top-16 left-0 w-full backdrop-blur-xl bg-black/40 
                 © 2026 Kinder Magic Preschool. All rights reserved.
             </p>
 
-      
+
 
         </div>
 
     </div>
 
 </footer>
-<script src="js/index.js"></script>
+<script src="./js/index.js"></script>
 
 </html>
